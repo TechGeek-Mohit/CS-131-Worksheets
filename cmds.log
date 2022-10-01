@@ -1,0 +1,58 @@
+[mohit@sjsu wk3]$ rmdir PRODUCTS
+[mohit@sjsu wk3]$ rmdir CUSTOMERS
+[mohit@sjsu wk3]$ ls
+amazon_reviews_us_Books_v1_02.tsv
+[mohit@sjsu wk3]$ cd ..
+[mohit@sjsu ~]$ ls
+A1  A2  wk3
+[mohit@sjsu ~]$ clear
+[mohit@sjsu ~]$ cd wk3
+[mohit@sjsu wk3]$ script wk3.txt
+Script started, file is wk3.txt
+alias ll='ls -l --color=auto'
+bash: alias: =: not found
+bash: alias: ls -latr: not found
+bash: alias: w: not found
+bash: alias: =: not found
+bash: alias: ls -la | wc: not found
+[mohit@sjsu wk3]$ mkdir PRODUCTS
+[mohit@sjsu wk3]$ mkdir CUSTOMERS
+[mohit@sjsu wk3]$ vi amazon_reviews_us_Books_v1_02.tsv
+[mohit@sjsu wk3]$ grep 12703090 amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >  CUSTOMERS/12703090.txt
+[mohit@sjsu wk3]$ grep 31048862 amazon_reviews_us_Books_v1_02.tsv | cut -f 9 >  CUSTOMERS/31048862.txt
+[mohit@sjsu wk3]$ vi amazon_reviews_us_Books_v1_02.tsv
+[mohit@sjsu wk3]$ grep 50732546  amazon_reviews_us_Books_v1_02.tsv | cut -f 9 > CUSTOMERS/50732546.txt
+[mohit@sjsu wk3]$ vi amazon_reviews_us_Books_v1_02.tsv
+[mohit@sjsu wk3]$ grep 348672532 amazon_reviews_us_Books_v1_02.tsv | cut -f 9 > PRODUCTS/348672532.txt
+[mohit@sjsu wk3]$ grep 0811828964 amazon_reviews_us_Books_v1_02.tsv | cut -f 9 > PRODUCTS/0811828964.txt
+[mohit@sjsu wk3]$ grep 1844161560 amazon_reviews_us_Books_v1_02.tsv | cut -f 9 > PRODUCTS/1844161560.txt
+[mohit@sjsu wk3]$ cd PRODUCTS
+[mohit@sjsu PRODUCTS]$ ls
+0811828964.txt  1844161560.txt  348672532.txt
+[mohit@sjsu PRODUCTS]$ vi 0811828964.txt
+[mohit@sjsu PRODUCTS]$ awk '{ total += $1 } END { print total/NR }' 0811828964.txt
+3.60274
+[mohit@sjsu PRODUCTS]$ awk '{ total += $1 } END { print total/NR }' 348672532.txt
+2
+[mohit@sjsu PRODUCTS]$ awk '{ total += $1 } END { print total/NR }' 1844161560.txt
+20.7
+[mohit@sjsu PRODUCTS]$ awk '{ total += $1 } END { print total/NR }' CUSTOMERS/12703090.txt
+awk: fatal: cannot open file `CUSTOMERS/12703090.txt' for reading (No such file or directory)
+[mohit@sjsu PRODUCTS]$ awk cd ..
+awk: warning: command line argument `..' is a directory: skipped
+[mohit@sjsu PRODUCTS]$ cd .
+[mohit@sjsu PRODUCTS]$ cd wk3
+0811828964.txt  1844161560.txt  348672532.txt
+[mohit@sjsu PRODUCTS]$ cd ..
+[mohit@sjsu wk3]$ cd CUSTOMERS
+[mohit@sjsu CUSTOMERS]$ awk '{ total += $1 } END { print total/NR }' CUSTOMERS/12703090.txt
+awk: fatal: cannot open file `CUSTOMERS/12703090.txt' for reading (No such file or directory)
+[mohit@sjsu CUSTOMERS]$ ls
+12703090.txt  31048862.txt  50732546.txt
+[mohit@sjsu CUSTOMERS]$ awk '{ total += $1 } END { print total/NR }' 12703090.txt
+5
+[mohit@sjsu CUSTOMERS]$ awk '{ total += $1 } END { print total/NR }' 31048862.txt
+1.5
+[mohit@sjsu CUSTOMERS]$ awk '{ total += $1 } END { print total/NR }' 50732546.txt
+5.85086
+[mohit@sjsu CUSTOMERS]$ echo "Yes I think" >>                                                                                   [mohit@sjsu CUSTOMERS]$ echo "Yes I think mean helpfulness value will be different for products and customers. Both a customer and products can get and recieve different types of reviews. Based on individual user ids, every customer has their unique experience with the product, so there can be a good amount of varaition in helpfullness value." >> readme.txt
