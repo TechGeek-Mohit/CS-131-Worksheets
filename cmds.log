@@ -1,0 +1,12 @@
+ls
+script wks5.txt
+awk '{print $2}' amazon_reviews_us_Books_v1_02.tsv | uniq -c | sort -n | tail -n 1000 | cut -f 2 >> customerIds.txt
+ vi customerIds.txt
+ awk '{print $2}' customerIds.txt >> custIds.txt
+ grep -o -f custIds.txt amazon_reviews_us_Books_v1_02.tsv >> reviews.txt
+ grep -f custIds.txt amazon_reviews_us_Books_v1_02.tsv > reviews.txt
+  grep -F -f custIds.txt amazon_reviews_us_Books_v1_02.tsv > reviews.txt
+  grep -F -f custIds.txt amazon_reviews_us_Books_v1_02.tsv | tail -n 1000 > reviews.txt
+  vi for_loop.txt
+  awk -f for_loop.awk amazon_reviews_us_Books_v1_02.tsv >>
+   ~/.bash_history >> cmds.log
