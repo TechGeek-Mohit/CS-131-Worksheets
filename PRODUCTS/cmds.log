@@ -1,0 +1,40 @@
+  984  git status
+  985  ls
+  986  cd CS-131-Worksheets/
+  987  ls
+  988  rm *
+  989  ls
+  990  git status
+  991  wget    https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+  992  gunzip amazon_reviews_us_Books_v1_02.tsv.gz 
+  993   mkdir PRODUCTS
+  994  ls
+  995  grep -h " The End of Poverty: Economic Possibilities for Our Time Books" amazon_reviews_us_Books_v1_02.tsv 
+  996* 
+  997  grep -h " The End of Poverty: Economic Possibilities for Our Time Books" amazon_reviews_us_Books_v1_02.tsv >> 1594200459.txt
+  998   export DATETIME=`date "+%Y%m%d_%H%M%S"`
+  999  OUTDIR=out.$DATETIME
+ 1000  echo $DATETIME
+ 1001  grep -h " The End of Poverty: Economic Possibilities for Our Time Books" amazon_reviews_us_Books_v1_02.tsv >  PRODUCTS/1594200459.txt
+ 1002  ls
+ 1003  rm 1594200459.txt 
+ 1004  cd PRODUCTS/
+ 1005  ls
+ 1006  cd ..
+ 1008  cp PRODUCTS/1594200459.txt PRODUCTS/1594200459.txt.$DATETIME.txt
+ 1009  cd PRODUCTS/
+ 1010  ls
+ 1011  ln -s 1594200459.txt.20221023_014645.txt 1594200459.txt
+ 1012  ln -s 1594200459.txt.20221023_014645.txt 1594200459.LATEST.txt
+ 1013  ls 1594200459.LATEST.txt 
+ 1014  ls -l 1594200459.LATEST.txt 
+ 1015  vi 1594200459.avg.txt
+ 1016  vi avg.sh
+ 1017  chmod 777 avg.sh
+ 1018  crontab -e
+ 1019  crontab -l
+ 1020  *****/home/mohit/wks6/CS-131-Worksheets/PRODUCTS/avg.sh > /home/mohit/wks6/CS-131-Worksheets/PRODUCTS/cron.log 2>&1
+ 1021  history >> sample.txt
+ 1022  vi sample.txt 
+ 1023  history >> cmds.log
+ 1027  history | tail -n 150 >  cmds.log 
