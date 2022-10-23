@@ -1,0 +1,150 @@
+  878  grep -h " The End of Poverty: Economic Possibilities for Our Time Books " amazon_reviews_us_Books_v1_02.tsv 
+  879   export DATETIME=`date "+%Y%m%d_%H%M%S"
+  880  export DATETIME=`date "+%Y%m%d_%H%M%S"`
+  881  OUTDIR=out.$DATETIME
+  882  cp PRODUCTS/1594200459.txt PRODUCTS/1594200459.$DATETIME.txt
+  883  grep -h " The End of Poverty: Economic Possibilities for Our Time Books " amazon_reviews_us_Books_v1_02.tsv >> PRODUCTS/1594200459.txt 
+  884  cp PRODUCTS/1594200459.txt PRODUCTS/1594200459.$DATETIME.txt
+  885  echo -e "\t\t\t\t\t\t\t5\t\t\t\t\t\t\t" >> PRODUCTS/0195141261.$DATETIME.txt
+  886  cd PRODUCTS/
+  887  ln -s 0195141261.20221020_141147.txt 0195141261.LATEST.txt
+  888  ls -i num*
+  889  ls -i 0195141261*
+  890   10   ls -l 0195141261.LATEST.txt
+  891   ls -l 0195141261.LATEST.txt
+  892  vi 0195141261.AVGRATING.txt
+  893  vi avg.sh
+  894  clear
+  895  ls
+  896  cd ~
+  897  mkdir worksheet-6
+  898  ls
+  899  cd worksheet-6/
+  900  git clone -b worksheet-6 https://github.com/TechGeek-Mohit/CS-131-Worksheets.git
+  901  ls
+  902  mkdir PRODUCTS
+  903   wget    https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+  904  ls
+  905  gunzip amazon_reviews_us_Books_v1_02.tsv.gz 
+  906  grep -h " The End of Poverty: Economic Possibilities for Our Time Books" amazon_reviews_us_Books_v1_02.tsv 
+  907  grep -h "The End of Poverty: Economic Possibilities for Our Time Books" amazon_reviews_us_Books_v1_02.tsv 
+  908  grep "The End of Poverty: Economic Possibilities for Our Time Books" amazon_reviews_us_Books_v1_02.tsv 
+  909  fgrep "The End of Poverty: Economic Possibilities for Our Time Books" amazon_reviews_us_Books_v1_02.tsv 
+  910  fgrep "The End of Poverty: Economic Possibilities" amazon_reviews_us_Books_v1_02.tsv 
+  911  export DATETIME=`date "+%Y%m%d_%H%M%S"`
+  912  OUTDIR=out.$DATETIME
+  913  echo $DATETIME
+  914  export DATETIME=`date "+%Y%m%d_%H%M%S"` >>/PRODUCTS/1594200459.txt
+  915  export DATETIME=`date "+%Y%m%d_%H%M%S"` >> \PRODUCT\1594200459.txt
+  916  ls
+  917  cd PRODUCTS/
+  918  ls
+  919  rm *
+  920  rmdir PRODUCTS
+  921  ls
+  922  cd ..
+  923  rm PRODUCT
+  924  ls
+  925  rm PRODUCTS
+  926  rmdir PRODUCTS
+  927  ls
+  928  rmdir CS-131-Worksheets/
+  929  cd CS-131-Worksheets/
+  930  rm *
+  931  ld
+  932  ls
+  933  cd ..
+  934  ls
+  935  rm CS-131-Worksheets/
+  936  rmdir CS-131-Worksheets/
+  937  ls
+  938  rm amazon_reviews_us_Books_v1_02.tsv 
+  939  ls
+  940  em PRODUCT1594200459.txt 
+  941  ls CS-131-Worksheets/
+  942  ls
+  943  cs CS-131-Worksheets/
+  944  ls
+  945  cd CS-131-Worksheets/
+  946  cd ..
+  947  cd ~
+  948  ls
+  949  rmdir wk6
+  950  rmdir worksheet-6/
+  951  ls
+  952  mkdir wks6
+  953  git clone -b worksheet-6 https://github.com/TechGeek-Mohit/CS-131-Worksheets.git
+  954  ls
+  955  CS-131-Worksheets/
+  956  cd CS-131-Worksheets/
+  957  rm 
+  958  rm *
+  959  ls
+  960  cd ..
+  961  rm CS-131-Worksheets/
+  962  rmdir CS-131-Worksheets/
+  963  git status
+  964  ls
+  965  cd wks6/
+  966  ls
+  967  git branch -d localBranchName
+  968  history.txt
+  969  vi history
+  970  rm *
+  971  ls
+  972  vi history.txt
+  973  history >> history.txt
+  974  vi history.txt 
+  975  tmux ls
+  976  exit
+  977  ls
+  978  cd wks6
+  979  ls
+  980  rm history.txt 
+  981  ls
+  982  clear
+  983  git clone -b worksheet-6 https://github.com/TechGeek-Mohit/CS-131-Worksheets.git
+  984  git status
+  985  ls
+  986  cd CS-131-Worksheets/
+  987  ls
+  988  rm *
+  989  ls
+  990  git status
+  991  wget    https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+  992  gunzip amazon_reviews_us_Books_v1_02.tsv.gz 
+  993   mkdir PRODUCTS
+  994  ls
+  995  grep -h " The End of Poverty: Economic Possibilities for Our Time Books" amazon_reviews_us_Books_v1_02.tsv 
+  996* 
+  997  grep -h " The End of Poverty: Economic Possibilities for Our Time Books" amazon_reviews_us_Books_v1_02.tsv >> 1594200459.txt
+  998   export DATETIME=`date "+%Y%m%d_%H%M%S"`
+  999  OUTDIR=out.$DATETIME
+ 1000  echo $DATETIME
+ 1001  grep -h " The End of Poverty: Economic Possibilities for Our Time Books" amazon_reviews_us_Books_v1_02.tsv >  PRODUCTS/1594200459.txt
+ 1002  ls
+ 1003  rm 1594200459.txt 
+ 1004  cd PRODUCTS/
+ 1005  ls
+ 1006  cd ..
+ 1007  cd PRODUCTS/1594200459.txt PRODUCTS/1594200459.txt.$DATETIME.txt
+ 1008  cp PRODUCTS/1594200459.txt PRODUCTS/1594200459.txt.$DATETIME.txt
+ 1009  cd PRODUCTS/
+ 1010  ls
+ 1011  ln -s 1594200459.txt.20221023_014645.txt 1594200459.txt
+ 1012  ln -s 1594200459.txt.20221023_014645.txt 1594200459.LATEST.txt
+ 1013  ls 1594200459.LATEST.txt 
+ 1014  ls -l 1594200459.LATEST.txt 
+ 1015  vi 1594200459.avg.txt
+ 1016  vi avg.sh
+ 1017  chmod 777 avg.sh
+ 1018  crontab -e
+ 1019  crontab -l
+ 1020  *****/home/mohit/wks6/CS-131-Worksheets/PRODUCTS/avg.sh > /home/mohit/wks6/CS-131-Worksheets/PRODUCTS/cron.log 2>&1
+ 1021  history >> sample.txt
+ 1022  vi sample.txt 
+ 1023  history >> cmds.log
+ 1024  history | tail -200 >  cmds.log 
+ 1025  history | tail -n 200 >  cmds.log 
+ 1026*  
+ 1027  history | tail -n 150 >  cmds.log 
