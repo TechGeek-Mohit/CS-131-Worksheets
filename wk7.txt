@@ -1,0 +1,11 @@
+mkdir PRODUCTS
+grep -h " The End of Poverty: Economic Possibilities for Our Time Books" amazon_reviews_us_Books_v1_02.tsv >> PRODUCTS/1594200459.txt
+vi 1594200459.txt
+cut -f 14  PRODUCTS/1594200459.txt >> PRODUCTS/1594200459_reviews.txt
+#Remove all commas, dots, semicolons, and these stopwords:  and or if in it.
+sed -i -e 's/\(,\|\.\|;\)//g' PRODUCTS/1594200459_reviews.txt
+#Remove all words 
+sed -i -e 's/\<\(and\|or\|if\|in\|it\)\>//gi'
+#Remove html tags
+sed -i -e 's/<[^>]*>//g' -e 's/  / /gi' >>result.txt
+vi result.txt
