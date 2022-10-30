@@ -1,0 +1,21 @@
+Script started on 2022-10-26 03:49:33-04:00
+alias ll='ls -l --color=auto'
+bash: alias: =: not found
+bash: alias: ls -latr: not found
+bash: alias: w: not found
+bash: alias: =: not found
+bash: alias: ls -la | wc: not found
+^[]0;mohit@sjsu:~/worksheet-7^G[mohit@sjsu worksheet-7]$ ls
+amazon_reviews_us_Books_v1_02.tsv  ^[[0m^[[38;5;33mPRODUCTS^[[0m  wk7.txt
+^[]0;mohit@sjsu:~/worksheet-7^G[mohit@sjsu worksheet-7]$ grep -h " The End of Poverty: Economic ^M Possibilities for Our Time Books"$^[]0;mohit@sjsu:~/worksheet-7^G[mohit@sjsu worksheet-7]$ vi 1594200459.txt
+^[[?2004h^[[?1049h^[[22;0;0t^[[?1h^[=^[[?2004h^[[1;34r^[[?12h^[[?12l^[[27m^[[23m^[[29m^[[m^[[H^[[2J^[[?25l^[[34;1H"1594200459.txt" [$^[[?2004l^[[?1l^[>^[[?25h^[[?1049l^[[23;0;0t^[]0;mohit@sjsu:~/worksheet-7^G[mohit@sjsu worksheet-7]$ rm 1594200459.txt ^H^[[K^H^[[K^$^[]0;mohit@sjsu:~/worksheet-7^G[mohit@sjsu worksheet-7]$ sed -i -e 's/\(,\|\.\|;\)//g' PRODUCTS/^M/1594200459_reviews.txt
+^[]0;mohit@sjsu:~/worksheet-7^G[mohit@sjsu worksheet-7]$ sed -i -e 's/\<\(and\|or\|if\|in\|it\)\^M\>//gi'1594200459_reviews.txt
+sed: -e expression #1, char 44: unknown option to `s'
+^[]0;mohit@sjsu:~/worksheet-7^G[mohit@sjsu worksheet-7]$ sed -i -e 's/\<\(and\|or\|if\|in\|it\)\^M\>//gi'1594200459_reviews.txt^H^H^$^M^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^G^G^G^G^G^H^H$^M^[[C
+sed: -e expression #1, char 44: unknown option to `s'
+^[]0;mohit@sjsu:~/worksheet-7^G[mohit@sjsu worksheet-7]$ sed -i -e 's/\<\(and\|or\|if\|in\|it\)\^M\>//gi'1594200459_reviews.txt^H^H^$^M
+sed: -e expression #1, char 10: unknown option to `s'
+^[]0;mohit@sjsu:~/worksheet-7^G[mohit@sjsu worksheet-7]$ sed -i -e 's\<\(and\|or\|if\|in\|it\)\>^M>//gi'1594200459_reviews.txt^H^[[K$^M^[[K^[[A^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[$^[]0;mohit@sjsu:~/worksheet-7^G[mohit@sjsu worksheet-7]$ scr^H^[[K^H^[[K^H^[[Kvi result.txt
+^[[?2004h^[[?1049h^[[22;0;0t^[[?1h^[=^[[?2004h^[[1;34r^[[?12h^[[?12l^[[27m^[[23m^[[29m^[[m^[[H^[[2J^[[?25l^[[34;1H"result.txt" 0L, 0$^[[?2004l^[[?1l^[>^[[?25h^[[?1049l^[[23;0;0t^[]0;mohit@sjsu:~/worksheet-7^G[mohit@sjsu worksheet-7]$ scr^H^[[K^H^[[K^H^[[Kexit
+^[[?2004h^[[?1049h^[[22;0;0t^[[?1h^[=^[[?2004h^[[1;34r^[[?12h^[$^[[?2004l^[[?1l^[>^[[?25h^[[?1049l^[[23;0;0t^[]0;mohit@sjsu:~/w$
+Script done on 2022-10-26 03:53:42-04:00
