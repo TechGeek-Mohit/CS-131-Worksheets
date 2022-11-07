@@ -1,0 +1,32 @@
+#Verified Reviews
+awk -F'\t' '($12=="Y"){print}' >> verifiedReviews.txt
+
+#Unverified Reviews
+awk -F'\t' '($12=="N"){print}' >> unVerifiedReviews.txt
+
+#the 10 most frequent words in the review_body of the verified reviews
+cut -f14 verifiedReviews.txt| head -n 100|  tr -c '[:alnum:]' '[\n*]' | sed "s/ /\n/g" | sed "s/ //g"| sort | uniq -c | sort -nr| head -n 10 
+100 book
+88 are
+77 not
+70 his
+64 you
+60 has
+54 the
+50 has
+48 was
+40 can
+
+#the 10 most frequent words in the review_body of the unverified reviews
+cut -f14 UnVerifiedReviews.txt| head -n 100|  |tr -c '[:alnum:]' '[\n*]' | sed "s/ /\n/g" | sed "s/ //g"| sort | uniq -c | sort -nr| head -n 10
+
+ 80 you
+ 70are
+ 67 not
+ 62 book
+ 54 was
+ 47 her
+ 40 will
+ 40 by
+ 40 about
+ 10 have
