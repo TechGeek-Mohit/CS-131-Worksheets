@@ -1,0 +1,4 @@
+awk -F'\t' '($12=="Y"){print}' >> verifiedReviews.txt
+awk -F'\t' '($12=="N"){print}' >> unVerifiedReviews.txt
+cut -f14 verifiedReviews.txt| head -n 100|  tr -c '[:alnum:]' '[\n*]' | sed "s/ /\n/g" | sed "s/ //g"| sort | uniq -c | sort -nr| head -n 10 
+cut -f14 UnVerifiedReviews.txt| head -n 100|  |tr -c '[:alnum:]' '[\n*]' | sed "s/ /\n/g" | sed "s/ //g"| sort | uniq -c | sort -nr| head -n 10
