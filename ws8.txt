@@ -20,13 +20,13 @@ cut -f14 verifiedReviews.txt| head -n 100|  tr -c '[:alnum:]' '[\n*]' | sed "s/ 
 #the 10 most frequent words in the review_body of the unverified reviews
 cut -f14 UnVerifiedReviews.txt| head -n 100|  |tr -c '[:alnum:]' '[\n*]' | sed "s/ /\n/g" | sed "s/ //g"| sort | uniq -c | sort -nr| head -n 10
 
- 80 you
- 70are
- 67 not
- 62 book
- 54 was
- 47 her
- 40 will
- 40 by
- 40 about
- 10 have
+80 you
+70are
+67 not
+62 book
+54 was
+47 her
+40 will
+40 by
+40 about
+10 have
