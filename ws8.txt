@@ -5,7 +5,7 @@ awk -F'\t' '($12=="Y"){print}' >> verifiedReviews.txt
 awk -F'\t' '($12=="N"){print}' >> unVerifiedReviews.txt
 
 #the 10 most frequent words in the review_body of the verified reviews
-cut -f14 verifiedReviews.txt| head -n 100|  tr -c '[:alnum:]' '[\n*]' | sed "s/ /\n/g" | sed "s/ //g"| sort | uniq -c | sort -nr| head -n 10 
+cut -f14 verifiedReviews.txt| head -n 100|  tr -c '[:alnum:]' '[\n*]' | sed "s/ /\n/g" | sort | uniq -c | sort -nr| head -n 10 
 100 book
 88 are
 77 not
@@ -18,7 +18,7 @@ cut -f14 verifiedReviews.txt| head -n 100|  tr -c '[:alnum:]' '[\n*]' | sed "s/ 
 40 can
 
 #the 10 most frequent words in the review_body of the unverified reviews
-cut -f14 UnVerifiedReviews.txt| head -n 100|  |tr -c '[:alnum:]' '[\n*]' | sed "s/ /\n/g" | sed "s/ //g"| sort | uniq -c | sort -nr| head -n 10
+cut -f14 UnVerifiedReviews.txt| head -n 100|  |tr -c '[:alnum:]' '[\n*]' | sed "s/ /\n/g" | sort | uniq -c | sort -nr| head -n 10
 
 80 you
 70are
