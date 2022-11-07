@@ -21,7 +21,7 @@ cut -f14 verifiedReviews.txt| head -n 100|  tr -c '[:alnum:]' '[\n*]' | sed "s/ 
 cut -f14 UnVerifiedReviews.txt| head -n 100|  |tr -c '[:alnum:]' '[\n*]' | sed "s/ /\n/g" | sort | uniq -c | sort -nr| head -n 10
 
 80 you
-70are
+70 are
 67 not
 62 book
 54 was
