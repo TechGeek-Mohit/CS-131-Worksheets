@@ -1,1 +1,0 @@
-"Yes I think mean helpfulness value will be different for products and customers. Both a customer and products can get and recieve different types of reviews. Based on individual user ids, every customer has their unique experience with the product, so there can be a good amount of varaition in helpfullness value.
