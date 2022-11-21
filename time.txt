@@ -11,3 +11,5 @@ min 0  max 15835  avg 9.33468
 real	0m23.695s
 user	0m27.706s
 sys	0m2.249s
+
+//Thus, python script in faster than bash script based on the above output
