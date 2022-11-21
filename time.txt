@@ -1,0 +1,13 @@
+time python3 numbers.py
+min 0 max 15835 avg 9.33467921636312
+
+real	0m0.001s
+user	0m0.001s
+sys	0m0.000s
+
+time ./numbers.sh
+min 0  max 15835  avg 9.33468
+
+real	0m23.695s
+user	0m27.706s
+sys	0m2.249s
